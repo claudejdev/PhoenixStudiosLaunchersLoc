@@ -4,20 +4,16 @@ GenericEntity : "{CC5683DB678C5B1E}Prefabs/Weapons/Launchers/MATADOR/Launcher_Ma
   SCR_WeaponAttachmentsStorageComponent "{51F080D5CE45A1A2}" {
    Attributes SCR_ItemAttributeCollection "{51F080D5C64F12C5}" {
     ItemDisplayName WeaponUIInfo "{5222CB047B845168}" {
-     Name "Matador ASM HEAT"
+     Name "#PS-Weapon_Matador_HEAT_Name"
+     Description "#PS-Weapon_Matador_HEAT_Description"
     }
    }
   }
   WeaponComponent "{CFBAA4B706BA66E8}" {
-   components {
-    SCR_MuzzleInMagComponent "{50F65D04F21F7633}" {
-     AmmoTemplate "{3EC0666B57258CB5}Prefabs/Weapons/Ammo/Ammo_Matador_HEAT.et"
-    }
-   }
    UIInfo WeaponUIInfo "{CC3BA6A2C42F09F4}" {
-    Name "L2A1 Matador ASM HEAT"
+    Name "#PS-Weapon_Matador_HEAT_Name"
+    Description "#PS-Weapon_Matador_HEAT_Description"
    }
   }
  }
- coords 1094.38 39 2408.175
 }

@@ -1,147 +1,17 @@
 Projectile {
- ID "62CED54FC2202D87"
+ ID "61E6B77D36A6847A"
  components {
-  SignalsManagerComponent "{62CED54FC2202D7E}" {
-  }
-  SCR_ShellSoundComponent "{62CED54FC2202D69}" {
-   Filenames {
-    "{EC2BE25B666DF83A}Sounds/Weapons/_SharedData/ProjectileTravelling/Weapons_ProjectileTravelling_RPG_Generic.acp"
-   }
-   OnFrameUpdate 1
-   ScriptCallbacks 1
-  }
-  AICombatPropertiesComponent "{62CED54FC2202D61}" {
-   Priority 5
-   PriorityAgainstVehicles 40
-   UsedAgainst 14
-   IndirectlyUsedAgainst 1
-  }
-  CollisionTriggerComponent "{62CED54FC2202D65}" {
-   PROJECTILE_EFFECTS {
-    ExplosionEffect "{62CED54FC2202D58}" {
-     EffectPrefab "{D584F2FFFDC7DE49}Prefabs/Weapons/Warheads/Warhead_Shell_HE.et"
-     ParticleEffect "{CAC6DFB93BB7E75C}Particles/Weapon/Explosion_Matador_HESH.ptc"
-     SoundEvent "SOUND_EXPLOSION"
-    }
-    AIExplosionEffect "{62CED54FC2202D56}" {
+  InventoryItemComponent "{61E6B77D36A68443}" {
+   Attributes SCR_ItemAttributeCollection "{61E6B77D36A68446}" {
+    ItemDisplayName UIInfo "{61E6B77D36A6843A}" {
+     Name "#PS-AmmoType_Matador_HESH"
     }
    }
   }
-  InventoryItemComponent "{62CED54FC2202D4B}" {
-   Attributes SCR_ItemAttributeCollection "{62CED54FC2202D4D}" {
-    ItemDisplayName UIInfo "{62CED54FC2202D43}" {
-     Name "Tandem Warhead"
-    }
-    ItemPhysAttributes ItemPhysicalAttributes "{62CED54FC2202D40}" {
-     Weight 2
-     SizeSetupStrategy Manual
-     ItemDimensions 20 20 20
-     ItemVolume 1200
-     DimensionScaler 1
-     RestingAdditiveRotationLS 0 0 0
-     RestingAdditiveOffsetLS 0 0 0
-    }
-    CustomAttributes {
-     PreviewRenderAttributes "{62CED54FC2202D44}" {
-      CameraPreset Top
-      CameraOrbitAngles 0 0 90
-      CameraDistanceToItem 1
-      CameraOffset 0.2 0 0
-      FOV 12
-      AspectRatio 1
-     }
-     PreviewRenderAttributes "{62CED54FC2202D39}" {
-      CameraPreset Top
-      CameraDistanceToItem 2.3
-      ItemRenderRotation 0 270 0
-      FOV 10
-      AspectRatio 1
-     }
-    }
-    m_SlotType SLOT_BACKPACK
+  MagazineComponent "{61E6B77D36A68429}" {
+   UIInfo MagazineUIInfo "{61E6B77D36A68419}" {
+    Name "#PS-AmmunitionType_HESH"
    }
-  }
-  MagazineComponent "{62CED54FC2202D3C}" {
-   MagazineWell MagazineWellRPG7 "{62CED54FC2202D2C}" {
-   }
-   UIInfo MagazineUIInfo "{62CED54FC2202D21}" {
-    Name "HESH"
-    Description "#AR-Magazine_PG7VM_Description"
-    m_sAmmoCaliber "90mm"
-    m_sAmmoType "HESH"
-    m_bShowAmmoTypeText 1
-    m_eAmmoTypeFlags HEAT
-   }
-   ItemModel "{AB5B33E5DB4321E7}Assets/Weapons/Magazines/Matador/HESH_Projectile_Cartridge.xob"
-   MaxAmmo 1
-  }
-  MeshObject "{62CED54FC2202D1A}" {
-   Object "{6EC92159EF98CE21}Assets/Weapons/Magazines/Matador/HESH_Projectile.xob"
-  }
-  RigidBody "{62CED54FC2202D1E}" {
-   LayerPreset "Projectile"
-   Mass 2.6
-   ModelGeometry 1
-  }
-  SCR_SoundDataComponent "{62CED54FC2202D13}" {
-   m_aAudioSourceConfiguration {
-    SCR_AudioSourceConfiguration "{62CED54FC2202D17}" {
-     m_sSoundProject "{0419D7F707E63D8B}Sounds/Weapons/_SharedData/PickUp/Weapons_PickUp_Rocket.acp"
-     m_sSoundEventName "SOUND_PICK_UP"
-    }
-    SCR_AudioSourceConfiguration "{62CED54FC2202D0A}" {
-     m_sSoundProject "{0419D7F707E63D8B}Sounds/Weapons/_SharedData/PickUp/Weapons_PickUp_Rocket.acp"
-     m_sSoundEventName "SOUND_EQUIP"
-    }
-    SCR_AudioSourceConfiguration "{62CED54FC2202D09}" {
-     m_sSoundProject "{DB06E3D5DFC046B4}Sounds/Weapons/_SharedData/Drop/Weapons_Drop_Rocket.acp"
-     m_sSoundEventName "SOUND_DROP"
-    }
-   }
-  }
-  ShellMoveComponent "{62CED54FC2202D0C}" {
-   InitSpeed 250
-   Mass 1.6
-   TimeToLive 30
-   LayerPreset "Projectile"
-   ProjectileEffects {
-    ProjectileDamage "{62CED54FC2202D07}" {
-     DamageValue 200
-    }
-    HitSoundEffect "{62CED54FC2202D04}" {
-     Filename "{70BE55084354B6D5}Sounds/Weapons/_SharedData/RocketHits/Weapons_RocketHits.acp"
-    }
-    AIHitEffect "{62CED54FC2202EF7}" {
-    }
-   }
-   BallisticTableConfig "{D88C26E7EC2C0C01}Configs/Weapons/AIBallisiticTables/AIBT_Grenade_HE_M406.conf"
-   AirDrag 0.0007
-   Diameter 90
-   PenetrationUse 1
-   PenetrationDepth 30
-   PenetrationDensity 5
-  }
-  ActionsManagerComponent "{62CED54FC2202EE9}" {
-   ActionContexts {
-    UserActionContext "{62CED54FC2202EEE}" {
-     ContextName "default"
-     Position PointInfo "{62CED54FC2202EEC}" {
-     }
-     Height 0
-    }
-   }
-  }
-  RplComponent "{62CED54FC2202EE7}" {
-   "Rpl State Override" Runtime
-   "Parent Node From Parent Entity" 0
-  }
-  Hierarchy "{62CED54FC2202EE5}" {
   }
  }
- coords 1096.954 39 2418.045
- SpawnAsCartridge 1
- ProjectileVisibleTimeScale 2
- ProjectileModel "{6EC92159EF98CE21}Assets/Weapons/Magazines/Matador/HESH_Projectile.xob"
- CartridgeModel "{AB5B33E5DB4321E7}Assets/Weapons/Magazines/Matador/HESH_Projectile_Cartridge.xob"
- CartridgeLayerPreset "ItemFireView"
 }

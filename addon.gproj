@@ -7,6 +7,70 @@ GameProject {
  }
  Configurations {
   GameProjectConfig PC {
+   WidgetManagerSettings WidgetManagerSettings "{AC4BE58770485E02}" {
+    StringTables {
+     StringTableDefinition "{62CED55B2F2E7C1C}" {
+      StringTableSource "{32AF97A46D4C4709}Language/PSL_localization.st"
+      Languages {
+       LanguageDefinition "{62CED55B2DB4DEF2}" {
+        Code "cs_cz"
+        StringTableRuntime "{43CE56D03F2A15C6}Language/PSL_localization.cs_cz.conf"
+       }
+       LanguageDefinition "{62CED55B2DB4DE9E}" {
+        Code "de_de"
+        StringTableRuntime "{96B04CE32C8904E6}Language/PSL_localization.de_de.conf"
+       }
+       LanguageDefinition "{62CED55B2DB4DE7A}" {
+        Code "en_us"
+        StringTableRuntime "{C840C6A8467A01E7}Language/PSL_localization.en_us.conf"
+       }
+       LanguageDefinition "{62CED55B2DB4DE65}" {
+        Code "es_es"
+        StringTableRuntime "{0D0C8B21A8786AF8}Language/PSL_localization.es_es.conf"
+       }
+       LanguageDefinition "{62CED55B2DB4DE43}" {
+        Code "fr_fr"
+        StringTableRuntime "{B6A47E164EFB89FA}Language/PSL_localization.fr_fr.conf"
+       }
+       LanguageDefinition "{62CED55B2DB4DE2D}" {
+        Code "it_it"
+        StringTableRuntime "{36B8F122E3D90A03}Language/PSL_localization.it_it.conf"
+       }
+       LanguageDefinition "{62CED55B2DB4DE0B}" {
+        Code "ja_jp"
+        LanguageGroup EastAsian
+        StringTableRuntime "{26A34CB0DDA83AA8}Language/PSL_localization.ja_jp.conf"
+       }
+       LanguageDefinition "{62CED55B2DB4DFE7}" {
+        Code "ko_kr"
+        LanguageGroup EastAsian
+        StringTableRuntime "{861D641C4E853997}Language/PSL_localization.ko_kr.conf"
+       }
+       LanguageDefinition "{62CED55B2DB4DFCD}" {
+        Code "pl_pl"
+        StringTableRuntime "{DA6CC2E6F06AA5EB}Language/PSL_localization.pl_pl.conf"
+       }
+       LanguageDefinition "{62CED55B2DB4DFB4}" {
+        Code "pt_br"
+        StringTableRuntime "{0F1B582ACB946F51}Language/PSL_localization.pt_br.conf"
+       }
+       LanguageDefinition "{62CED55B2DB4DF93}" {
+        Code "ru_ru"
+        StringTableRuntime "{5A5A4C8256ED0A27}Language/PSL_localization.ru_ru.conf"
+       }
+       LanguageDefinition "{62CED55B2DB4DF73}" {
+        Code "uk_ua"
+        StringTableRuntime "{D00219743AC3B472}Language/PSL_localization.uk_ua.conf"
+       }
+       LanguageDefinition "{62CED55B2DB4D89E}" {
+        Code "zh_cn"
+        LanguageGroup EastAsian
+        StringTableRuntime "{0AB277490363646F}Language/PSL_localization.zh_cn.conf"
+       }
+      }
+     }
+    }
+   }
   }
   GameProjectConfig XBOX_ONE {
   }

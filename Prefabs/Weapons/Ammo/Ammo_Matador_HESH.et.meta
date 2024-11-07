@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{DA80EF6DD58036E4}Prefabs/Weapons/Ammo/Ammo_Matador_HESH.et"
+ Name "{DA80EF6DD58036E3}Prefabs/Weapons/Ammo/Ammo_Matador_HESH.et"
  Configurations {
   EntityTemplateResourceClass PC {
   }
