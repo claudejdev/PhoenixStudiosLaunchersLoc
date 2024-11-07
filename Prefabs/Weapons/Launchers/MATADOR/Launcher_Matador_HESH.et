@@ -1,0 +1,10 @@
+GenericEntity : "{CC5683DB678C5B1E}Prefabs/Weapons/Launchers/MATADOR/Launcher_Matador_base.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   UIInfo WeaponUIInfo "{CC3BA6A2C42F09F4}" {
+    Name "L2A1 Matador ASM HESH"
+   }
+  }
+ }
+}

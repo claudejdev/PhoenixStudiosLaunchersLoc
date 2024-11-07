@@ -1,0 +1,22 @@
+GameProject {
+ ID "PhoenixStudiosLaunchersLoc"
+ GUID "62CED3376AF2AC28"
+ TITLE "Phoenix Studios Launchers Localization"
+ Dependencies {
+  "61E6B7782C81BAF3" "58D0FB3206B6F859"
+ }
+ Configurations {
+  GameProjectConfig PC {
+  }
+  GameProjectConfig XBOX_ONE {
+  }
+  GameProjectConfig XBOX_SERIES {
+  }
+  GameProjectConfig PS4 {
+  }
+  GameProjectConfig PS5 {
+  }
+  GameProjectConfig HEADLESS {
+  }
+ }
+}

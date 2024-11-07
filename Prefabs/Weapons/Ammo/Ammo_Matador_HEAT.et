@@ -1,0 +1,151 @@
+Projectile {
+ ID "62CED54FCE2437CA"
+ components {
+  SignalsManagerComponent "{62CED54FCE2437C7}" {
+  }
+  SCR_ShellSoundComponent "{62CED54FCE2437B1}" {
+   Filenames {
+    "{EC2BE25B666DF83A}Sounds/Weapons/_SharedData/ProjectileTravelling/Weapons_ProjectileTravelling_RPG_Generic.acp"
+   }
+   OnFrameUpdate 1
+   ScriptCallbacks 1
+  }
+  AICombatPropertiesComponent "{62CED54FCE2437AD}" {
+   Priority 100
+   PriorityAgainstVehicles 40
+   UsedAgainst 14
+   IndirectlyUsedAgainst 15
+  }
+  CollisionTriggerComponent "{62CED54FCE2437A1}" {
+   PROJECTILE_EFFECTS {
+    ExplosionEffect "{62CED54FCE24379A}" {
+     EffectPrefab "{D649A52C2A1A29FF}Prefabs/Weapons/Warheads/Warhead_HEAT_PG7VM.et"
+     ParticleEffect "{23F9A95426D203BF}Particles/Weapon/Explosion_Matador_HEAT.ptc"
+     SoundEvent "SOUND_EXPLOSION"
+    }
+    AIExplosionEffect "{62CED54FCE243797}" {
+    }
+   }
+  }
+  InventoryItemComponent "{62CED54FCE243794}" {
+   Attributes SCR_ItemAttributeCollection "{62CED54FCE243789}" {
+    ItemDisplayName UIInfo "{62CED54FCE24378E}" {
+     Name "Tandem Warhead"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{62CED54FCE243783}" {
+     Weight 2
+     SizeSetupStrategy Manual
+     ItemDimensions 20 20 20
+     ItemVolume 1200
+     DimensionScaler 1
+     RestingAdditiveRotationLS 0 0 0
+     RestingAdditiveOffsetLS 0 0 0
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{62CED54FCE243786}" {
+      CameraPreset Top
+      CameraOrbitAngles 0 0 90
+      CameraDistanceToItem 1
+      CameraOffset 0.2 0 0
+      FOV 12
+      AspectRatio 1
+     }
+     PreviewRenderAttributes "{62CED54FCE24377B}" {
+      CameraPreset Top
+      CameraDistanceToItem 2.3
+      ItemRenderRotation 0 270 0
+      FOV 10
+      AspectRatio 1
+     }
+    }
+    m_SlotType SLOT_BACKPACK
+   }
+  }
+  MagazineComponent "{62CED54FCE24377E}" {
+   MagazineWell MagazineWellRPG7 "{62CED54FCE24376C}" {
+   }
+   UIInfo MagazineUIInfo "{62CED54FCE243762}" {
+    Name "HEAT"
+    Description "#AR-Magazine_PG7VM_Description"
+    m_sAmmoCaliber "90mm"
+    m_sAmmoType "HEAT"
+    m_bShowAmmoTypeText 1
+    m_eAmmoTypeFlags HEAT
+    m_MagIndicator SCR_MagazineIndicatorConfiguration "{62CED54FCE243757}" {
+     m_sOutline "rocket-pg7vm"
+     m_bProgressBar 0
+    }
+   }
+   ItemModel "{5B0AA949790ACB08}Assets/Weapons/Magazines/Matador/HEAT_Projectile_Cartridge.xob"
+   MaxAmmo 1
+  }
+  MeshObject "{62CED54FCE243748}" {
+   Object "{48878B925B2CE9EF}Assets/Weapons/Magazines/Matador/HEAT_Projectile.xob"
+  }
+  RigidBody "{62CED54FCE24374C}" {
+   LayerPreset "Projectile"
+   Mass 2.6
+   ModelGeometry 1
+  }
+  SCR_SoundDataComponent "{62CED54FCE243740}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{62CED54FCE243746}" {
+     m_sSoundProject "{0419D7F707E63D8B}Sounds/Weapons/_SharedData/PickUp/Weapons_PickUp_Rocket.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{62CED54FCE24373A}" {
+     m_sSoundProject "{0419D7F707E63D8B}Sounds/Weapons/_SharedData/PickUp/Weapons_PickUp_Rocket.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+    }
+    SCR_AudioSourceConfiguration "{62CED54FCE243738}" {
+     m_sSoundProject "{DB06E3D5DFC046B4}Sounds/Weapons/_SharedData/Drop/Weapons_Drop_Rocket.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+   }
+  }
+  ShellMoveComponent "{62CED54FCE24373C}" {
+   InitSpeed 250
+   Mass 1.6
+   TimeToLive 30
+   LayerPreset "Projectile"
+   ProjectileEffects {
+    ProjectileDamage "{62CED54FCE243730}" {
+     DamageValue 200
+    }
+    HitSoundEffect "{62CED54FCE243720}" {
+     Filename "{70BE55084354B6D5}Sounds/Weapons/_SharedData/RocketHits/Weapons_RocketHits.acp"
+    }
+    AIHitEffect "{62CED54FCE24371A}" {
+    }
+   }
+   BallisticTableConfig "{D88C26E7EC2C0C01}Configs/Weapons/AIBallisiticTables/AIBT_Grenade_HE_M406.conf"
+   AirDrag 0.0007
+   Diameter 90
+   PenetrationUse 1
+   PenetrationDepth 30
+   PenetrationDensity 10
+  }
+  ActionsManagerComponent "{62CED54FCE243712}" {
+   ActionContexts {
+    UserActionContext "{62CED54FCE243717}" {
+     ContextName "default"
+     Position PointInfo "{62CED54FCE243714}" {
+     }
+     Height 0
+    }
+   }
+  }
+  RplComponent "{62CED54FCE243708}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{62CED54FCE24370C}" {
+  }
+ }
+ coords 1096.729 39 2417.993
+ SpawnAsCartridge 1
+ ProjectileVisibleTimeScale 2
+ ProjectileModel "{48878B925B2CE9EF}Assets/Weapons/Magazines/Matador/HEAT_Projectile.xob"
+ CartridgeModel "{5B0AA949790ACB08}Assets/Weapons/Magazines/Matador/HEAT_Projectile_Cartridge.xob"
+ CartridgeLayerPreset "ItemFireView"
+}
